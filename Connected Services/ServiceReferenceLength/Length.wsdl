@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="kilometerToMeter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="km" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kilometerToMeterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kilometerToMeterResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="meterToKilometer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="m" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="meterToKilometerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="meterToKilometerResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="meterToFoot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="m" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="meterToFootResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="meterToFootResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="footToMeter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ft" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="footToMeterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="footToMeterResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kilometerToFoot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="km" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kilometerToFootResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kilometerToFootResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="footToKilometer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ft" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="footToKilometerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="footToKilometerResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="kilometerToMeterSoapIn">
+    <wsdl:part name="parameters" element="tns:kilometerToMeter" />
+  </wsdl:message>
+  <wsdl:message name="kilometerToMeterSoapOut">
+    <wsdl:part name="parameters" element="tns:kilometerToMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="meterToKilometerSoapIn">
+    <wsdl:part name="parameters" element="tns:meterToKilometer" />
+  </wsdl:message>
+  <wsdl:message name="meterToKilometerSoapOut">
+    <wsdl:part name="parameters" element="tns:meterToKilometerResponse" />
+  </wsdl:message>
+  <wsdl:message name="meterToFootSoapIn">
+    <wsdl:part name="parameters" element="tns:meterToFoot" />
+  </wsdl:message>
+  <wsdl:message name="meterToFootSoapOut">
+    <wsdl:part name="parameters" element="tns:meterToFootResponse" />
+  </wsdl:message>
+  <wsdl:message name="footToMeterSoapIn">
+    <wsdl:part name="parameters" element="tns:footToMeter" />
+  </wsdl:message>
+  <wsdl:message name="footToMeterSoapOut">
+    <wsdl:part name="parameters" element="tns:footToMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="kilometerToFootSoapIn">
+    <wsdl:part name="parameters" element="tns:kilometerToFoot" />
+  </wsdl:message>
+  <wsdl:message name="kilometerToFootSoapOut">
+    <wsdl:part name="parameters" element="tns:kilometerToFootResponse" />
+  </wsdl:message>
+  <wsdl:message name="footToKilometerSoapIn">
+    <wsdl:part name="parameters" element="tns:footToKilometer" />
+  </wsdl:message>
+  <wsdl:message name="footToKilometerSoapOut">
+    <wsdl:part name="parameters" element="tns:footToKilometerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LengthSoap">
+    <wsdl:operation name="kilometerToMeter">
+      <wsdl:input message="tns:kilometerToMeterSoapIn" />
+      <wsdl:output message="tns:kilometerToMeterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="meterToKilometer">
+      <wsdl:input message="tns:meterToKilometerSoapIn" />
+      <wsdl:output message="tns:meterToKilometerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="meterToFoot">
+      <wsdl:input message="tns:meterToFootSoapIn" />
+      <wsdl:output message="tns:meterToFootSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="footToMeter">
+      <wsdl:input message="tns:footToMeterSoapIn" />
+      <wsdl:output message="tns:footToMeterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="kilometerToFoot">
+      <wsdl:input message="tns:kilometerToFootSoapIn" />
+      <wsdl:output message="tns:kilometerToFootSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="footToKilometer">
+      <wsdl:input message="tns:footToKilometerSoapIn" />
+      <wsdl:output message="tns:footToKilometerSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LengthSoap" type="tns:LengthSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="kilometerToMeter">
+      <soap:operation soapAction="http://tempuri.org/kilometerToMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="meterToKilometer">
+      <soap:operation soapAction="http://tempuri.org/meterToKilometer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="meterToFoot">
+      <soap:operation soapAction="http://tempuri.org/meterToFoot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="footToMeter">
+      <soap:operation soapAction="http://tempuri.org/footToMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kilometerToFoot">
+      <soap:operation soapAction="http://tempuri.org/kilometerToFoot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="footToKilometer">
+      <soap:operation soapAction="http://tempuri.org/footToKilometer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LengthSoap12" type="tns:LengthSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="kilometerToMeter">
+      <soap12:operation soapAction="http://tempuri.org/kilometerToMeter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="meterToKilometer">
+      <soap12:operation soapAction="http://tempuri.org/meterToKilometer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="meterToFoot">
+      <soap12:operation soapAction="http://tempuri.org/meterToFoot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="footToMeter">
+      <soap12:operation soapAction="http://tempuri.org/footToMeter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kilometerToFoot">
+      <soap12:operation soapAction="http://tempuri.org/kilometerToFoot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="footToKilometer">
+      <soap12:operation soapAction="http://tempuri.org/footToKilometer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Length">
+    <wsdl:port name="LengthSoap" binding="tns:LengthSoap">
+      <soap:address location="https://localhost:44372/Length.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LengthSoap12" binding="tns:LengthSoap12">
+      <soap12:address location="https://localhost:44372/Length.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

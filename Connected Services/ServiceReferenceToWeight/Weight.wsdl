@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="kilogramToGram">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kg" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kilogramToGramResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kilogramToGramResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gramToKilogram">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="g" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gramToKilogramResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gramToKilogramResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="poundToKilogram">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lb" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="poundToKilogramResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="poundToKilogramResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kilogramToPound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kg" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kilogramToPoundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kilogramToPoundResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="poundToGram">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lb" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="poundToGramResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="poundToGramResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gramToPound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gm" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gramToPoundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gramToPoundResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="kilogramToGramSoapIn">
+    <wsdl:part name="parameters" element="tns:kilogramToGram" />
+  </wsdl:message>
+  <wsdl:message name="kilogramToGramSoapOut">
+    <wsdl:part name="parameters" element="tns:kilogramToGramResponse" />
+  </wsdl:message>
+  <wsdl:message name="gramToKilogramSoapIn">
+    <wsdl:part name="parameters" element="tns:gramToKilogram" />
+  </wsdl:message>
+  <wsdl:message name="gramToKilogramSoapOut">
+    <wsdl:part name="parameters" element="tns:gramToKilogramResponse" />
+  </wsdl:message>
+  <wsdl:message name="poundToKilogramSoapIn">
+    <wsdl:part name="parameters" element="tns:poundToKilogram" />
+  </wsdl:message>
+  <wsdl:message name="poundToKilogramSoapOut">
+    <wsdl:part name="parameters" element="tns:poundToKilogramResponse" />
+  </wsdl:message>
+  <wsdl:message name="kilogramToPoundSoapIn">
+    <wsdl:part name="parameters" element="tns:kilogramToPound" />
+  </wsdl:message>
+  <wsdl:message name="kilogramToPoundSoapOut">
+    <wsdl:part name="parameters" element="tns:kilogramToPoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="poundToGramSoapIn">
+    <wsdl:part name="parameters" element="tns:poundToGram" />
+  </wsdl:message>
+  <wsdl:message name="poundToGramSoapOut">
+    <wsdl:part name="parameters" element="tns:poundToGramResponse" />
+  </wsdl:message>
+  <wsdl:message name="gramToPoundSoapIn">
+    <wsdl:part name="parameters" element="tns:gramToPound" />
+  </wsdl:message>
+  <wsdl:message name="gramToPoundSoapOut">
+    <wsdl:part name="parameters" element="tns:gramToPoundResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="kilogramToGram">
+      <wsdl:input message="tns:kilogramToGramSoapIn" />
+      <wsdl:output message="tns:kilogramToGramSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="gramToKilogram">
+      <wsdl:input message="tns:gramToKilogramSoapIn" />
+      <wsdl:output message="tns:gramToKilogramSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="poundToKilogram">
+      <wsdl:input message="tns:poundToKilogramSoapIn" />
+      <wsdl:output message="tns:poundToKilogramSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="kilogramToPound">
+      <wsdl:input message="tns:kilogramToPoundSoapIn" />
+      <wsdl:output message="tns:kilogramToPoundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="poundToGram">
+      <wsdl:input message="tns:poundToGramSoapIn" />
+      <wsdl:output message="tns:poundToGramSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="gramToPound">
+      <wsdl:input message="tns:gramToPoundSoapIn" />
+      <wsdl:output message="tns:gramToPoundSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="kilogramToGram">
+      <soap:operation soapAction="http://tempuri.org/kilogramToGram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gramToKilogram">
+      <soap:operation soapAction="http://tempuri.org/gramToKilogram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poundToKilogram">
+      <soap:operation soapAction="http://tempuri.org/poundToKilogram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kilogramToPound">
+      <soap:operation soapAction="http://tempuri.org/kilogramToPound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poundToGram">
+      <soap:operation soapAction="http://tempuri.org/poundToGram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gramToPound">
+      <soap:operation soapAction="http://tempuri.org/gramToPound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="kilogramToGram">
+      <soap12:operation soapAction="http://tempuri.org/kilogramToGram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gramToKilogram">
+      <soap12:operation soapAction="http://tempuri.org/gramToKilogram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poundToKilogram">
+      <soap12:operation soapAction="http://tempuri.org/poundToKilogram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kilogramToPound">
+      <soap12:operation soapAction="http://tempuri.org/kilogramToPound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poundToGram">
+      <soap12:operation soapAction="http://tempuri.org/poundToGram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gramToPound">
+      <soap12:operation soapAction="http://tempuri.org/gramToPound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="https://localhost:44372/Weight.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="https://localhost:44372/Weight.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
